@@ -9,8 +9,8 @@
   <title>Translator New</title>
   <style>
     body {
-      background-color: #FFFFFF;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #000000;
       font-family: sans-serif;
       overflow: hidden;
     }
@@ -42,7 +42,7 @@
       cursor: default;
       user-select: none;
       -webkit-user-select: none;
-      background-color: #000000;
+      background-color: #ffffff;
     }
     #launch {
       background-color: rgba(0, 0, 0, 0.7);
@@ -90,10 +90,10 @@
       border-radius: 4px;
     }
     .control-button:hover {
-      background: #8a8a8a26;
+      background: #85858526;
     }
     .control-button.active {
-      background: #8a8a8a59;
+      background: #85858559;
     }
     .fullscreen-button {
       background: white !important;
@@ -108,7 +108,7 @@
       cursor: pointer;
     }
   </style>
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#ffffff">
   <!-- no favicon -->
 </head>
 <body>
@@ -226,7 +226,7 @@ A.exports=function(){"use strict";var A=Object.hasOwnProperty,e=Object.setProtot
     setProgress(0.1);
 
     scaffolding.setUsername("player".replace(/#/g, () => Math.floor(Math.random() * 10)));
-    scaffolding.setAccentColor("#8a8a8a");
+    scaffolding.setAccentColor("#858585");
 
     scaffolding.addCloudProvider(new Scaffolding.Cloud.LocalStorageProvider());
 
@@ -282,7 +282,7 @@ A.exports=function(){"use strict";var A=Object.hasOwnProperty,e=Object.setProtot
         }
       });
       const otherControlsExist = false;
-      const fillColor = otherControlsExist ? '#575E75' : '#ffffff';
+      const fillColor = otherControlsExist ? '#575E75' : '#000000';
       const updateFullScreen = () => {
         isFullScreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
         if (isFullScreen) {
